@@ -236,6 +236,19 @@ and poverty to 8.25% in September 2025, the lowest BPS has recorded.</p>
   between them.</p>
   ${rankBars(EMPLOYMENT_SECTORS.map((s) => ({ label: s.name, value: s.share })), { unit: '%' })}
   ${sourceNote(SOURCES.bpsLabour + ' (shares rounded)')}
+</section>
+<section>
+  <h2>Human development, 2024</h2>
+  <p>Work is only part of wellbeing. The Human Development Index combines
+  health, schooling and living standards into one number from 0 to 100 —
+  Indonesia reached ${HDI_2024} in 2024, up from 74.39 in 2023.</p>
+  <table class="data-table"><thead><tr><th>Measure</th><th>Value</th><th>Year</th></tr></thead><tbody>
+    <tr><td>Human Development Index</td><td>${HDI_2024}</td><td>2024</td></tr>
+    <tr><td>Life expectancy at birth</td><td>${LIFE_EXPECTANCY_2024} years</td><td>2024</td></tr>
+    <tr><td>Expected years of schooling</td><td>${SCHOOLING_EXPECTED_2024} years</td><td>2024</td></tr>
+    <tr><td>Mean years of schooling</td><td>${SCHOOLING_MEAN_2024} years</td><td>2024</td></tr>
+  </tbody></table>
+  ${sourceNote(SOURCES.bpsHdi)}
 </section>`;
 }
 
